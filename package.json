@@ -31,14 +31,14 @@
                 "extensions": [
                     ".xon"
                 ],
-                "configuration": "./contributes/language.json"
+                "configuration": "./contributes/language-configuration.json"
             }
         ],
         "grammars": [
             {
                 "language": "xon",
                 "scopeName": "source.xon",
-                "path": "./contributes/grammar.json"
+                "path": "./contributes/xon.tmLanguage.json"
             }
         ]
     },
