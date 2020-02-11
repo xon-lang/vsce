@@ -3,14 +3,14 @@
     "displayName": "XON",
     "description": "XON Programming Language",
     "version": "0.0.1",
-    "icon": "icon.png",
     "engines": {
         "vscode": "^1.42.0"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/xon-lang/vsce.git"
+        "url": "https://github.com/xon-lang/vsce.git"
     },
+    "icon": "icon.png",
     "categories": [
         "Programming Languages"
     ],
