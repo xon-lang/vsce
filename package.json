@@ -4,6 +4,7 @@
     "description": "XON Language Support",
     "publisher": "nizami",
     "version": "1.0.0",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.42.0"
     },
@@ -38,6 +39,13 @@
                 "language": "xon",
                 "scopeName": "source.xon",
                 "path": "./syntaxes/xon.tmLanguage.json"
+            }
+        ],
+        "iconThemes": [
+            {
+                "id": "xon",
+                "label": "XON",
+                "path": "./icon-theme.json"
             }
         ]
     },
