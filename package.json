@@ -1,0 +1,45 @@
+{
+    "name": "xon",
+    "displayName": "XON",
+    "description": "XON Programming Language",
+    "version": "0.0.1",
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xon-lang/vsce.git"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "xon",
+                "aliases": [
+                    "XON",
+                    "xon"
+                ],
+                "extensions": [
+                    ".xon"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "xon",
+                "scopeName": "source.xon",
+                "path": "./syntaxes/xon.tmLanguage.json"
+            }
+        ]
+    },
+    "scripts": {
+        "yaml": "js-yaml syntaxes/xon.tmLanguage.yaml > syntaxes/xon.tmLanguage.json"
+    },
+    "devDependencies": {
+        "js-yaml": "^3.13.1"
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "XON",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numeric"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.xon",
+          "match": "\\b(if|loop|select|return)\\b"
+        }
+      ]
+    },
+    "numeric": {
+      "patterns": [
+        {
+          "name": "constant.numeric",
+          "match": "\\d+"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.single.xon",
+      "begin": "'",
+      "end": "'",
+      "patterns": [
+        {
+          "name": "constant.character.escape.xon",
+          "match": "\\\\."
+        }
+      ]
+    }
+  },
+  "scopeName": "source.xon"
+}
