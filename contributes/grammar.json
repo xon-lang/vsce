@@ -9,7 +9,7 @@
             "include": "#strings"
         },
         {
-            "include": "#numeric"
+            "include": "#numerics"
         }
     ],
     "repository": {
@@ -21,7 +21,7 @@
                 }
             ]
         },
-        "numeric": {
+        "numerics": {
             "patterns": [
                 {
                     "name": "constant.numeric",
@@ -37,6 +37,19 @@
                 {
                     "name": "constant.character.escape.xon",
                     "match": "\\\\."
+                }
+            ]
+        },
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.double-slash",
+                    "match": "//.*"
+                },
+                {
+                    "name": "comment.block",
+                    "begin": "/*",
+                    "end": "*/"
                 }
             ]
         }

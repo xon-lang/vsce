@@ -31,26 +31,16 @@
                 "extensions": [
                     ".xon"
                 ],
-                "configuration": "./language-configuration.json"
+                "configuration": "./contributes/language.json"
             }
         ],
         "grammars": [
             {
                 "language": "xon",
                 "scopeName": "source.xon",
-                "path": "./syntaxes/xon.tmLanguage.json"
-            }
-        ],
-        "iconThemes": [
-            {
-                "id": "xon",
-                "label": "XON",
-                "path": "./icon-theme.json"
+                "path": "./contributes/grammar.json"
             }
         ]
-    },
-    "scripts": {
-        "yaml": "js-yaml syntaxes/xon.tmLanguage.yaml > syntaxes/xon.tmLanguage.json"
     },
     "devDependencies": {
         "js-yaml": "^3.13.1"
