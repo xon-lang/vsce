@@ -1,11 +1,16 @@
 {
     "name": "xon",
     "displayName": "XON",
-    "description": "XON Programming Language",
-    "version": "0.0.1",
+    "description": "XON Language Support",
+    "publisher": "nizami",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.42.0"
     },
+    "bugs": {
+        "url": "https://github.com/xon-lang/vsce/issues"
+    },
+    "homepage": "https://github.com/xon-lang/vsce#readme",
     "repository": {
         "type": "git",
         "url": "https://github.com/xon-lang/vsce.git"
