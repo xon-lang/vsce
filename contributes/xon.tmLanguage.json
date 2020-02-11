@@ -3,53 +3,60 @@
     "name": "XON",
     "patterns": [
         {
-            "include": "#keywords"
-        },
-        {
-            "include": "#strings"
-        },
-        {
-            "include": "#numerics"
+            "include": "#grammar"
         }
     ],
     "repository": {
-        "keywords": {
+        "grammar": {
             "patterns": [
+                {
+                    "name": "comment.line.double-slash.xon",
+                    "begin": "//",
+                    "end": "$"
+                },
+                {
+                    "name": "comment.block.xon",
+                    "begin": "/\\*",
+                    "end": "\\*/"
+                },
                 {
                     "name": "keyword.control.xon",
                     "match": "\\b(if|loop|select|return)\\b"
-                }
-            ]
-        },
-        "numerics": {
-            "patterns": [
-                {
-                    "name": "constant.numeric",
-                    "match": "\\d+"
-                }
-            ]
-        },
-        "strings": {
-            "name": "string.quoted.single.xon",
-            "begin": "'",
-            "end": "'",
-            "patterns": [
-                {
-                    "name": "constant.character.escape.xon",
-                    "match": "\\\\."
-                }
-            ]
-        },
-        "comments": {
-            "patterns": [
-                {
-                    "name": "comment.line.double-slash",
-                    "match": "//.*"
                 },
                 {
-                    "name": "comment.block",
-                    "begin": "/*",
-                    "end": "*/"
+                    "comment": "decimal literal",
+                    "name": "constant.numeric.xon",
+                    "match": "\\d+(_\\d+)*"
+                },
+                {
+                    "comment": "float literal",
+                    "name": "constant.numeric.xon",
+                    "match": "\\d+(_\\d+)*\\.\\d+(_\\d+)*"
+                },
+                {
+                    "comment": "boolean literal",
+                    "name": "constant.language.boolean.xon",
+                    "match": "\\b(true|false)\\b"
+                },
+                {
+                    "comment": "string literal",
+                    "name": "string.quoted.single.xon",
+                    "begin": "'",
+                    "end": "'",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.xon",
+                            "match": "\\\\."
+                        }
+                    ]
+                },
+                {
+                    "name": "entity.name.function.xon",
+                    "match": "\\b([A-Za-z_][A-Za-z0-9_]*)\\s*\\("
+                },
+                {
+                    "name": "variable.other.xon",
+                    "match": "[a-zA-Z_][a-zA-Z0-9_]*"
                 }
             ]
         }

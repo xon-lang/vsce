@@ -41,8 +41,5 @@
                 "path": "./contributes/xon.tmLanguage.json"
             }
         ]
-    },
-    "devDependencies": {
-        "js-yaml": "^3.13.1"
     }
 }
