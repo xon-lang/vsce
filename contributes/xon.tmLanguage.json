@@ -21,7 +21,7 @@
                 },
                 {
                     "name": "keyword.control.xon",
-                    "match": "\\b(if|loop|select|return)\\b"
+                    "match": "\\b(if|loop|in|select|return|class|enum|scheme)\\b"
                 },
                 {
                     "comment": "decimal literal",
