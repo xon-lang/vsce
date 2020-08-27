@@ -1,6 +1,7 @@
 {
-    "[json]": {
-        "editor.tabSize": 4
+    "git.postCommitCommand": "sync",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#3a7fc9"
     },
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -8,5 +9,12 @@
         "source.fixAll": true
     },
     "files.autoSave": "afterDelay",
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
