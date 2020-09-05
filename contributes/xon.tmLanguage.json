@@ -21,7 +21,7 @@
                 },
                 {
                     "name": "keyword.control.xon",
-                    "match": "\\b(if|loop|in|select|return)\\b"
+                    "match": "\\b(if|else|elif|loop|in|select|return)\\b"
                 },
                 {
                     "comment": "decimal literal",
