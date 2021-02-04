@@ -2,12 +2,16 @@
     "name": "xon",
     "displayName": "XON",
     "description": "XON Language Support",
+    "author": "Nizami Amirov",
     "publisher": "nizami",
     "version": "1.3.0",
     "license": "MIT",
     "engines": {
-        "vscode": "^1.42.0"
+        "vscode": "^1.43.0"
     },
+    "activationEvents": [
+        "onLanguage:xon"
+    ],
     "bugs": {
         "url": "https://github.com/xon-lang/vsce/issues"
     },
@@ -16,11 +20,40 @@
         "type": "git",
         "url": "https://github.com/xon-lang/vsce.git"
     },
+    "keywords": [
+        "XON",
+        "Programming Language"
+    ],
     "icon": "icon.png",
     "categories": [
         "Programming Languages"
     ],
+    "main": "./dist/extension",
     "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "Example configuration",
+            "xon.format.enable": true,
+            "properties": {
+                "languageServerExample.maxNumberOfProblems": {
+                    "scope": "resource",
+                    "type": "number",
+                    "default": 100,
+                    "description": "Controls the maximum number of problems produced by the server."
+                },
+                "languageServerExample.trace.server": {
+                    "scope": "window",
+                    "type": "string",
+                    "enum": [
+                        "off",
+                        "messages",
+                        "verbose"
+                    ],
+                    "default": "off",
+                    "description": "Traces the communication between VS Code and the language server."
+                }
+            }
+        },
         "languages": [
             {
                 "id": "xon",
@@ -41,5 +74,20 @@
                 "path": "./contributes/xon.tmLanguage.json"
             }
         ]
+    },
+    "scripts": {
+        "compile": "tsc -b",
+        "watch": "tsc -b -w",
+        "vscode:prepublish": "npm run compile"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.52.0",
+        "@types/node": "^12.12.0",
+        "eslint": "^6.4.0",
+        "@typescript-eslint/parser": "^2.3.0",
+        "typescript": "^4.0.2"
+    },
+    "dependencies": {
+        "vscode-languageclient": "^7.0.0"
     }
 }
