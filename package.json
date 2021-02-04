@@ -83,11 +83,6 @@
     "devDependencies": {
         "@types/vscode": "^1.52.0",
         "@types/node": "^12.12.0",
-        "eslint": "^6.4.0",
-        "@typescript-eslint/parser": "^2.3.0",
         "typescript": "^4.0.2"
-    },
-    "dependencies": {
-        "vscode-languageclient": "^7.0.0"
     }
 }

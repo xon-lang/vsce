@@ -23,10 +23,10 @@ export class XonDocumentFormatter implements DocumentFormattingEditProvider {
 }
 
 export function activate(context: ExtensionContext) {
-    // context.subscriptions.push(
-        // languages.registerDocumentFormattingEditProvider(
-        //     'xon',
-        //     new XonDocumentFormatter()
-        // )
-    // );
+    context.subscriptions.push(
+        languages.registerDocumentFormattingEditProvider(
+            'xon',
+            new XonDocumentFormatter()
+        )
+    );
 }
