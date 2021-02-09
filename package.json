@@ -7,7 +7,7 @@
   "version": "1.4.0",
   "license": "MIT",
   "engines": {
-    "vscode": "^1.43.0"
+    "vscode": "^1.53.0"
   },
   "activationEvents": [
     "onLanguage:xon"
@@ -86,7 +86,7 @@
   },
   "devDependencies": {
     "@types/node": "^14.14.25",
-    "@types/vscode": "^1.43.0",
+    "@types/vscode": "^1.53.0",
     "husky": "^5.0.9",
     "pinst": "^2.1.4",
     "rimraf": "^3.0.2",
