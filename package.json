@@ -26,7 +26,8 @@
   ],
   "icon": "icon.png",
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Formatters"
   ],
   "main": "./dist/extension",
   "contributes": {
