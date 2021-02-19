@@ -41,8 +41,8 @@
                 {
                     "comment": "string literal",
                     "name": "string.quoted.single.xon",
-                    "begin": "'",
-                    "end": "'",
+                    "begin": "\"",
+                    "end": "\"",
                     "patterns": [
                         {
                             "name": "constant.character.escape.xon",
