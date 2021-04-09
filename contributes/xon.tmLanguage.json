@@ -11,13 +11,8 @@
       "patterns": [
         {
           "name": "comment.line.double-slash.xon",
-          "begin": "//",
+          "begin": "--",
           "end": "$"
-        },
-        {
-          "name": "comment.block.xon",
-          "begin": "/\\*",
-          "end": "\\*/"
         },
         {
           "name": "keyword.control.xon",
