@@ -83,7 +83,8 @@
     "pre-commit": "scripts/pre-commit.sh",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "postpublish": "pinst --enable",
+    "update-packages": "ncu -u && rimraf package-lock.json && rimraf node_modules && npm i"
   },
   "devDependencies": {
     "@types/node": "^15.0.1",
