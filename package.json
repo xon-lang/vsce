@@ -87,8 +87,8 @@
     "update-packages": "ncu -u && rimraf package-lock.json && rimraf node_modules && npm i"
   },
   "devDependencies": {
-    "@types/node": "^15.0.1",
-    "@types/vscode": "^1.55.0",
+    "@types/node": "^15.0.2",
+    "@types/vscode": "^1.56.0",
     "husky": "^6.0.0",
     "pinst": "^2.1.6",
     "rimraf": "^3.0.2",
