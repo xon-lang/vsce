@@ -16,7 +16,7 @@
         },
         {
           "name": "keyword.control.xon",
-          "match": "\\b(if|then|else|loop|not|in|is|as|break|return)\\b"
+          "match": "\\b(is|as|if|in|or|for|not|and|else|init|loop|this|break|while|return)\\b"
         },
         {
           "comment": "decimal literal",
