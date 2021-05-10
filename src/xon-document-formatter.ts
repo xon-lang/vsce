@@ -1,8 +1,6 @@
 import { formatCode } from '@xon/formatter';
 import {
-  // CancellationToken,
   DocumentFormattingEditProvider,
-  // FormattingOptions,
   ProviderResult,
   Range,
   TextDocument,
@@ -18,8 +16,8 @@ export class XonDocumentFormatter implements DocumentFormattingEditProvider {
     const firstLine = document.lineAt(0);
     const lastLine = document.lineAt(document.lineCount - 1);
     const range = new Range(firstLine.range.start, lastLine.range.end);
-
     const text = document.getText(range);
+
     return [TextEdit.replace(range, formatCode(text))];
   }
 }
