@@ -55,13 +55,14 @@
     "compile": "tsc -b",
     "watch": "tsc -b -w",
     "vscode:prepublish": "npm run -S esbuild-base -- --minify",
+    "vscode:postpublish": "git push",
     "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=dist/main.js --external:vscode --format=cjs --platform=node",
     "esbuild": "npm run -S esbuild-base -- --sourcemap",
     "esbuild-watch": "npm run -S esbuild-base -- --sourcemap --watch",
     "pre-commit": "scripts/pre-commit.sh",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable && git push",
+    "postpublish": "pinst --enable",
     "update-packages": "ncu -u && rimraf package-lock.json && rimraf node_modules && npm i"
   },
   "devDependencies": {
